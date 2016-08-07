@@ -82,7 +82,7 @@ class SomeOtherComponent extends React.Component {
         this.doSomethingOnBack();
         ev.stopPropagation();
       }
-    });
+    }, this);
   }
 
   componentWillUnmount() {
