@@ -2,7 +2,7 @@
 
 ## Handle complex back button flows on android
 
-### Version 1.0.0 <breaking.feature.fix>
+### Version 1.0.0 (breaking.feature.fix)
 
 #### Usage:
 
