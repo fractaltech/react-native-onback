@@ -1,4 +1,7 @@
-const {BackAndroid} = require('react-native');
+const {
+  BackAndroid,
+  BackHandler
+} = require('react-native');
 const {isFunction} = require('lodash');
 /*
 onBack((ev) => {...}, this);
@@ -6,6 +9,8 @@ onBack.unmount(this);
 
 onBack((ev) => {...}, this);
 */
+
+var BackButton = BackHandler || BackAndroid;
 
 class BackButtonHandler {
   constructor() {
@@ -82,11 +87,11 @@ class BackButtonHandler {
   }
 
   hook() {
-    BackAndroid.addEventListener('hardwareBackPress', this.handleBack);
+    BackButton.addEventListener('hardwareBackPress', this.handleBack);
   }
 
   unhook() {
-    BackAndroid.removeEventListener('hardwareBackPress');
+    BackButton.removeEventListener('hardwareBackPress');
   }
 }
 
