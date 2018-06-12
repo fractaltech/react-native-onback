@@ -10,7 +10,7 @@ onBack.unmount(this);
 onBack((ev) => {...}, this);
 */
 
-var BackButton = BackHandler || BackAndroid;
+const BackButton = BackHandler || BackAndroid;
 
 class BackButtonHandler {
   constructor() {

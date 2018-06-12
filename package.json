@@ -1,6 +1,6 @@
 {
   "name": "react-native-onback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "handle back button functionality on various react components",
   "repository": "https://github.com/fractaltech/react-native-onback",
   "main": "lib/index.js",

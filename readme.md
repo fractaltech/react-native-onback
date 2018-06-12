@@ -44,7 +44,7 @@ class SomeScreen extends React.Component {
       // This listener will be at the bottom of the stack and
       // will be called if no other listeners registered after
       // it stop the propagation of back event
-      BackAndroid.exitApp();
+      BackHandler.exitApp();
     }, this); // <----- NOTICE THE `this`. This lets onBack know the context of the listener
 
     onBack((ev) => {
